@@ -1,0 +1,34 @@
+{
+    "compilerOptions": {
+        "charset": "utf8",
+        "noImplicitAny": false,
+        "removeComments": true,
+        "preserveConstEnums": true,
+        "sourceMap": false,
+        "target": "ES5",
+        "outDir": "game1/js",
+        "types": [
+            "node"
+        ],
+        "typeRoots": [
+            "node_modules/@types", "types"
+        ],
+        "noUnusedLocals": false,
+        "noUnusedParameters": false,
+        "module": "CommonJS",
+        "noImplicitThis": false
+    },
+    "filesGlob": [
+        "ts"
+    ],
+    "exclude": [
+        "node_modules",
+        "typings/browser",
+        "typings/browser.d.ts"
+    ],
+    "compileOnSave": true,
+    "buildOnSave": false,
+    "atom": {
+        "rewriteTsconfig": false
+    }
+}
