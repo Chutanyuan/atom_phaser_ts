@@ -1,6 +1,7 @@
 class BootState {
     game: Phaser.Game;
     dijis:Phaser.Group;
+    zidans:Phaser.Group;
     constructor(game: Phaser.Game) {
         this.game = game;
     }
@@ -25,6 +26,8 @@ class BootState {
         this.dijis.createMultiple(10,'diji');
         this.dijis.setAll('outOfBoundsKill',true);
         this.dijis.setAll('checkWorldBounds',true);
+
+        this.zidans = this.game.add.group();
         //产生敌机的定时器
         this.game.time.events.loop(Phaser.Timer.SECOND*2,this.genDiji,this);
     }

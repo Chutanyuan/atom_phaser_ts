@@ -21,6 +21,7 @@ var BootState = (function () {
         this.dijis.createMultiple(10, 'diji');
         this.dijis.setAll('outOfBoundsKill', true);
         this.dijis.setAll('checkWorldBounds', true);
+        this.zidans = this.game.add.group();
         this.game.time.events.loop(Phaser.Timer.SECOND * 2, this.genDiji, this);
     };
     BootState.prototype.genDiji = function () {
